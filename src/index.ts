@@ -9,12 +9,14 @@ const FRONTEND_URL = "https://mybooknest.pages.dev";
 app.use(cors({
     origin: FRONTEND_URL,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
 }));
 
 app.options("*", cors({
     origin: FRONTEND_URL,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
 }));
 
