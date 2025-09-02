@@ -4,7 +4,7 @@ import authRoutes from "./routes/authRoutes.js";
 
 const app = express();
 
-const FRONTEND_URL = "https://mybooknest.pages.dev/";
+const FRONTEND_URL = "https://mybooknest.pages.dev";
 
 app.use(cors({
     origin: FRONTEND_URL,
