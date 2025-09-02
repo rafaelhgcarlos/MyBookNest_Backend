@@ -12,13 +12,6 @@ app.use(cors({
     credentials: true
 }));
 
-app.options("*", cors({
-    origin: FRONTEND_URL,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true
-}));
-
 app.use(express.json());
 app.use("/auth", authRoutes);
 
