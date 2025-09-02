@@ -7,9 +7,10 @@ const FRONTEND_URL = "https://mybooknest.pages.dev";
 
 app.use(cors({
     origin: FRONTEND_URL,
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true
+    credentials: true,
+    optionsSuccessStatus: 200
 }));
 
 app.use(express.json());
